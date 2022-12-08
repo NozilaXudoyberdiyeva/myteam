@@ -27,6 +27,7 @@
    --contact-bg-color: #F67E7E;
    --footer-bg-color: #002529;
    --text-color: #79C8C7;
+   --deliver-section-bg-color: #004047;
 }
 
 html{
@@ -78,11 +79,12 @@ img{
     padding-left: 20px;
 }
 /*MAIN STYLES START*/
-.build-section{
-    background-image: url(../images/desk-buil-bg.png);
+.deliver-section{
+    max-width: 100%;
+    background-image: url(../images/delivering-bottom-bg.png);
+    background-position: 1325px 653px;
     background-repeat: no-repeat;
-    background-position: 1420px 396px;
-    background-color: var(--main-bg-color);
+    background-color: var(--deliver-section-bg-color);
 }
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -91,106 +93,104 @@ only screen and (     -o-min-device-pixel-ratio: 2/1),
 only screen and (        min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) { 
-    .build-section{
-        background-image: url(../images/desk-buil-bg@2x.png)
+    .deliver-section{
+        background-image: url(../images/delivering-bottom-bg@2x.png);
     }
 }
-.build-section__wrapper{
-    display: flex;
-    justify-content: space-between;
-    padding-top: 198px;
-    padding-bottom: 108px;
+.deliver-section__wrapper{
+    padding-top: 40px;
+    padding-bottom: 151px;
+    text-align: center;
 }
-.build-section__line{
-    position: relative;
-    top: 140px;
-    width: 50px;
-    height: 4px;
-    background-color: var(--contact-bg-color);
-}
-.build-section__title{
-    width: 445px;
-    margin: 0;
+.deliver-section__title{
+    width: 945px;
+    margin: 0 auto 56px;
     font-weight: 700;
     font-size: 48px;
     line-height: 48px;
     color: var(--main-text-color);
 }
-.build-section__list{
+.deliver-section__title--end{
+    color: var(--text-color);
+}
+.deliver-section__list{
+    display: flex;
+    gap: 30px;
     margin: 0;
     padding: 0;
     list-style: none;
 }
-.build-section__item{
-    display: flex;
-    gap: 39px;
-    margin-bottom: 32px;
-    background-image: url(../images/oval.png);
-    background-position: 20px 10px;
-    background-repeat: no-repeat;
+.deliver-section__item{
+   background-image: url(../images/quote.svg);
+   background-position: center 0 ;
+   background-repeat: no-repeat;
+   padding-top: 36px;
 }
-.build-section__subtitle{
-    margin: 0;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 28px;
-    color: var(--contact-bg-color);
-}
-.build-section__text{
-    width: 445px;
-    margin: 0;
+.deliver-section__text{
+    width: 350px;
+    margin-top: 0;
+    margin-bottom: 24px;
     font-size: 15px;
     line-height: 25px;
     color: var(--main-text-color);
-    mix-blend-mode: normal;
-    opacity: 0.8;
-    
 }
-@media (max-width:810px) {
+.name{
+    margin-top: 0;
+    margin-bottom: 2px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--text-color); 
+}
+.job{
+    display: block;
+    margin-bottom: 32px;
+    font-size: 13px;
+    line-height: 18px;
+    color: var(--main-text-color);
+}
+@media (max-width: 1133px) {
     .container{
         max-width: 729px;
     }
-    .build-section{
-        background-position: 668px 0;
+    .deliver-section{
+        background-position: 568px 1135px;
     }
-    .build-section__line{
-        top: 100px;
+    .deliver-section__wrapper{
+        margin-bottom: 48px;
+        padding-top: 0;
+        padding-bottom: 100px;
     }
-    .build-section__wrapper{
-        flex-direction: column;
-        padding-top: 136px;
-    }
-    .build-section__title{
-        width: 445px;
-        margin-bottom: 64px;
+    .deliver-section__title{
+        width: 573px;
+        margin-bottom: 48px;
         font-size: 32px;
         line-height: 32px;
     }
+    .deliver-section__list{
+        flex-direction: column;
+        align-items: center;
+    }
+    .deliver-section__text{
+        width: 571px;
+        margin-bottom: 16px;
+    }
 }
-@media (max-width: 510px) {
+@media (max-width: 600px) {
     .container{
         max-width: 367px;
     }
-    .build-section{
-        background-position: 275px 0;
+    .deliver-section{
+        background-position: 175px 1338px;
     }
-    .build-section__line{
-        top: 64px;
+    .deliver-section__wrapper{
+        padding-top: 40px;
+        padding-bottom: 164px;
     }
-    .build-section__wrapper{
-        padding-top: 100px;
+    .deliver-section__title{
+        width: 327px;
     }
-    .build-section__title{
-        width: 240px;
-        margin-bottom: 56px;
-    }
-    .build-section__item{
-        background-position: 150px 15px;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    .build-section__text{
+    .deliver-section__text{
         width: 327px;
     }
 }
