@@ -27,6 +27,7 @@
    --contact-bg-color: #F67E7E;
    --footer-bg-color: #002529;
    --text-color: #79C8C7;
+   --deliver-section-bg-color: #004047;
 }
 
 html{
@@ -146,7 +147,7 @@ only screen and (                min-resolution: 2dppx) {
     opacity: 0.8;
     
 }
-@media (max-width:810px) {
+@media (max-width:900px) {
     .container{
         max-width: 729px;
     }
@@ -167,7 +168,7 @@ only screen and (                min-resolution: 2dppx) {
         line-height: 32px;
     }
 }
-@media (max-width: 510px) {
+@media (max-width: 600px) {
     .container{
         max-width: 367px;
     }
