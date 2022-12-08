@@ -46,7 +46,7 @@ body{
     flex-direction: column;
     height: 100%;
     margin: 0;
-    font-family: "Livvic" "Arial", sans-serif;
+    font-family: "Livvic", "Arial", sans-serif;
     font-weight: 600;
     background-color: #fff;
 }
@@ -77,3 +77,73 @@ img{
     padding-right: 20px;
     padding-left: 20px;
 }
+/*MAIN STYLES START*/
+.build-section{
+    background-image: url(../images/desk-buil-bg.png);
+    background-repeat: no-repeat;
+    background-position: 1420px 396px;
+    background-color: var(--main-bg-color);
+}
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+    .build-section{
+        background-image: url(../images/desk-buil-bg@2x.png)
+    }
+}
+.build-section__wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 198px;
+    padding-bottom: 108px;
+}
+.build-section__line{
+    position: relative;
+    top: 140px;
+    width: 50px;
+    height: 4px;
+    background-color: var(--contact-bg-color);
+}
+.build-section__title{
+    width: 445px;
+    margin: 0;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    color: var(--main-text-color);
+}
+.build-section__list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.build-section__item{
+    display: flex;
+    gap: 39px;
+    margin-bottom: 32px;
+    background-image: url(../images/oval.png);
+    background-position: 20px 10px;
+    background-repeat: no-repeat;
+}
+.build-section__subtitle{
+    margin: 0;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--contact-bg-color);
+}
+.build-section__text{
+    width: 445px;
+    margin: 0;
+    font-size: 15px;
+    line-height: 25px;
+    color: var(--main-text-color);
+    mix-blend-mode: normal;
+    opacity: 0.8;
+    
+}
+/*MAIN STYLES START*/
