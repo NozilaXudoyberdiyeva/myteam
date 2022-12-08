@@ -146,4 +146,52 @@ only screen and (                min-resolution: 2dppx) {
     opacity: 0.8;
     
 }
+@media (max-width:810px) {
+    .container{
+        max-width: 729px;
+    }
+    .build-section{
+        background-position: 668px 0;
+    }
+    .build-section__line{
+        top: 100px;
+    }
+    .build-section__wrapper{
+        flex-direction: column;
+        padding-top: 136px;
+    }
+    .build-section__title{
+        width: 445px;
+        margin-bottom: 64px;
+        font-size: 32px;
+        line-height: 32px;
+    }
+}
+@media (max-width: 510px) {
+    .container{
+        max-width: 367px;
+    }
+    .build-section{
+        background-position: 275px 0;
+    }
+    .build-section__line{
+        top: 64px;
+    }
+    .build-section__wrapper{
+        padding-top: 100px;
+    }
+    .build-section__title{
+        width: 240px;
+        margin-bottom: 56px;
+    }
+    .build-section__item{
+        background-position: 150px 15px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .build-section__text{
+        width: 327px;
+    }
+}
 /*MAIN STYLES START*/
