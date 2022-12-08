@@ -78,7 +78,6 @@ img{
     padding-left: 20px;
 }
 
-/******************* HERO SECTION  STYLES START   ******************/
 .hero-section {
     background-color: var(--hero-bg-color);
     background-image: url(../images/disk-hero-bg.png);
@@ -179,5 +178,3 @@ only screen and (                min-resolution: 2dppx) {
         width: 327px;
     }
 }
-
-/******************* HERO SECTION STYLES  END      ******************/
