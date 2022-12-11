@@ -826,3 +826,93 @@ only screen and (                min-resolution: 2dppx) {
     }
 }
 /* FOOTER STYLES END */
+
+/* DIRECTORS SECTION STYLES START */
+.directors-section{
+    background-color:var(--deliver-section-bg-color);
+    background-image: url(../images/delivering-top-bg.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+.directors-section__wrapper{
+    padding-top: 0;
+}
+.directors-section__title{
+    width: 920px;
+    height: 48px;
+    margin: 0;
+    margin-bottom: 64px;
+    padding-left: 180px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    text-align: center;
+    align-items: center;
+    color: var(--main-text-color);
+}
+.directors-section__list{
+    margin: 0;
+    padding: 0;
+    padding-bottom: 168px;
+}
+.directors-section__item{
+    width: 350px;
+    height: 253px;
+    display: inline-block;
+    text-align: center;
+    background-color:var(--main-bg-color);
+}
+.directors-section__item:nth-child(2){
+    margin: 0 25px;
+    margin-bottom: 76px;
+}
+.directors-section__item:nth-child(5){
+    margin: 0 25px;
+}
+.direction-section__item-img{
+    padding-top: 35px;
+}
+.section-list__title{ 
+    margin-top: 13px;
+    margin-bottom: 0;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--text-color);
+}
+.section-list__description{
+    height: 25px;
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-style: italic;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: var(--main-text-color);
+}
+.direction-section__item-end__title{
+    margin-top: 35px;
+    margin-bottom: 0;
+    height: 28px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--text-color);
+}
+.section-list__end-description{
+    height: 75px;
+    margin: 0;
+    padding: 8px 48px 24px 48px;
+    font-size: 15px;
+    line-height: 25px;
+    color: var(--main-text-color);
+}
+.direction-item__icon{
+    padding-top: 26px;
+    padding-bottom: 38px;
+    gap: 16px;
+}
+.direction__twitter{
+    margin-right: 16px;
+}
+/* DIRECTORS SECTION STYLES END */
