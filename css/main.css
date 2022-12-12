@@ -653,7 +653,7 @@ only screen and (                min-resolution: 2dppx) {
 
     .contact-section__title{
         margin: 24px 0;
-    }
+    }  
 }
 /*MAIN STYLES START*/
 /* FOOTER STYLES START */
@@ -710,8 +710,6 @@ only screen and (                min-resolution: 2dppx) {
     text-decoration: none;
     color: var(--main-text-color);
 }
-
-
 .site-footer__icon{
     display: -webkit-box;
     display: -ms-flexbox;
@@ -826,3 +824,136 @@ only screen and (                min-resolution: 2dppx) {
     }
 }
 /* FOOTER STYLES END */
+/*CONTACT PAGE STYLES START*/
+.form-section{
+    background-image: url(../images/3-page.bg-bottom.png);
+    background-repeat: no-repeat;
+    background-position: 1415px bottom;
+    background-color: var(--hero-bg-color);
+}
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                -webkit-min-device-pixel-ratio: 2),
+only screen and (                -o-min-device-pixel-ratio: 2/1),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+    .form-section{
+        background-image:url(../images/3-page.bg-bottom@2x.png);
+    }
+}
+.bg-img{
+    background-image: url(../images/3-page.bg-top.png);
+    background-repeat: no-repeat;
+    background-position: -100px 47px;
+}
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                -webkit-min-device-pixel-ratio: 2),
+only screen and (                -o-min-device-pixel-ratio: 2/1),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+    .bg-img{
+        background-image: url(../images/3-page.bg-top@2x.png);
+    }
+}
+.form-section__wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 47px;
+    padding-bottom: 128px;
+}
+.form-section__title{
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 100px;
+    color: var(--main-text-color);
+}
+.form-section__subtitle{
+    margin-top: 0;
+    margin-bottom: 54px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    color: var(--contact-bg-color);
+}
+.form-section__item{
+    padding-bottom: 24px;
+    margin-bottom: 0;
+    align-items: center;
+}
+.form-section__text{
+    margin: 0;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--main-text-color);
+}
+.input{
+    display: block;
+    width: 540px;
+    border-color: transparent transparent var(--main-text-color) transparent;
+    margin-bottom: 8px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 10px;
+    background-color: transparent;
+}
+.input:visited{
+    border-color: transparent transparent var(--text-color) transparent;
+}
+.message{
+    margin-bottom: 24px;
+    padding-bottom: 58px;
+}
+.form-section__btn{
+    background-color: var(--main-text-color);
+    border: 2px solid var(--main-text-color);
+    border-radius: 24px;
+    padding: 10px 32px 11px;
+    color: var(--deliver-section-bg-color);
+}
+@media (max-width:1135px) {
+    .container{
+        max-width: 555px;
+    }
+    .form-section{
+        background-image: none;
+    }
+    .form-section__wrapper{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+@media (max-width: 605px) {
+    .container{
+        min-width: 367px;
+    }
+    .form-section{
+        background-image: none;
+    }
+    .bg-img{
+        background-image: none;
+    }
+    .form-section__wrapper{
+        padding-top: 7px;
+    }
+    .form-section__item{
+        background-position: 20px 16px;
+        flex-direction: row;
+        text-align: start;
+    }
+    .form-section__text{
+        width: 232px;
+        text-align: start;
+    }
+    .input{
+        width: 325px;
+    }
+}
+/*CONTACT PAGE STYLES END*/
